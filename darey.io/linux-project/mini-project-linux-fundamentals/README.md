@@ -1,7 +1,7 @@
 #   Mini Project- linux fundamentals
 
 
-## Instance URL Below
+## AWS EC2 Instance URL Below
 
 https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-0df5c19adab7fc1ac
 
