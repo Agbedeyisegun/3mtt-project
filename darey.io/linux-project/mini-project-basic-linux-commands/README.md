@@ -3,6 +3,8 @@
 
 ## Readme URL Below: 
 
+https://github.com/Agbedeyisegun/3mtt-project/tree/main/darey.io/linux-project/mini-project-basic-linux-commands#readme
+
 ## Below are the screenshots of the steps.
 
 
