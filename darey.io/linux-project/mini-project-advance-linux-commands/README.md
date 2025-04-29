@@ -3,7 +3,7 @@
 
 ## Readme URL Below: 
 
-https://github.com/Agbedeyisegun/3mtt-project/blob/main/darey.io/linux-project/mini-project-linux-text-editor/README.md
+https://github.com/Agbedeyisegun/3mtt-project/blob/main/darey.io/linux-project/mini-project-advance-linux-commands/README.md
 
 ## Below are the screenshots of the steps.
 
