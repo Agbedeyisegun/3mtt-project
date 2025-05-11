@@ -1,4 +1,4 @@
-#   Mini Project Linux Shell Scripting 
+#   Mini Project Control Flow in Shell Scripting
 
 
 ## Readme URL Below: 
