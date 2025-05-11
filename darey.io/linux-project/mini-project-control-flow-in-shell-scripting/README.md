@@ -12,7 +12,7 @@ https://github.com/Agbedeyisegun/3mtt-project/blob/main/darey.io/linux-project/m
 - Step 1 
 Screenshot of using vim editor to create for loop standard or list type script that greet 4 people.
 
-![standard_forLoop](img\step1-standard-loop-vim.jpg)
+![standard_forLoop](img/step1-standard-loop-vim.jpg)
 
 
 
@@ -20,14 +20,14 @@ Screenshot of using vim editor to create for loop standard or list type script t
 - Step 2 
 Screenshot of all the commands to create the file check the necessary permissions for of the script and  changing it before running the script and lastly  run the script with bash below are the commands in this process
 `vim standard_loop.sh`, `ll standard_loop.sh`, `chmod u+x standard_loop.sh` and `bash standard_loop.sh`
-![test standard_loop](img\step2-standard-loop-chmod-vim.jpg)
+![test standard_loop](img/step2-standard-loop-chmod-vim.jpg)
 
 
 
 - Step 3 
 Screenshot of using vim editor that create for loop c style script that echo step1 to step6 then exit.
 
-![c_style_forLoop](img\step3-c-style-vim.jpg)
+![c_style_forLoop](img/step3-c-style-vim.jpg)
 
 
 
@@ -36,7 +36,7 @@ Screenshot of all the commands to create the file, check the necessary permissio
 `vim ./loop-c_style.sh`, `ll ./loop-c_style.sh`, `chmod u+x ./loop-c_style.sh` and `./loop-c_style.sh`
 ![test standard_loop]
 
-![c_style_forLoop](img\step4-c-style-chmod-ll-test.jpg)
+![c_style_forLoop](img/step4-c-style-chmod-ll-test.jpg)
 
 
 
@@ -45,7 +45,7 @@ Screenshot of all the commands to create the file, check the necessary permissio
 - Step 5 
 Screenshot of using vim editor that create for loop over command style script that takes the names of the last 3 users frm the /etc/passwd file, sleep for 2 seconds, then echo to the terminal "deleting users" then exit.
 
-![Loop command output creation](img\step5-loop-command-chmod-bash-ll.jpg)
+![Loop command output creation](img/step5-loop-command-chmod-bash-ll.jpg)
 
 
 
@@ -54,7 +54,7 @@ Screenshot of using vim editor that create for loop over command style script th
 Screenshot of all the commands that creates the file check the necessary permissions of the script and  changing it before running the script check if the users are there before the execution with bash below are the commands in this process
 `vim ./loop_command_output.sh`, `ll ./loop_command_output.sh`, `chmod u+x ./loop_command_output.sh` and `./loop_command_output.sh`
 
-![loop command output](img\step4-c-style-chmod-ll-test.jpg)
+![loop command output](img/step4-c-style-chmod-ll-test.jpg)
 
 
 
@@ -62,7 +62,7 @@ Screenshot of all the commands that creates the file check the necessary permiss
 - Step 6 
 Screenshot of testing if the script worked cat the /etc/passwd file to if the users are still there or not with `cat /etc/passwd | tail -3`
 
-![confirm standard_loop](img\step7-loop-command-cat.jpg)
+![confirm standard_loop](img/step7-loop-command-cat.jpg)
 
 
 
