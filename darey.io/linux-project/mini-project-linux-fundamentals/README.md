@@ -38,6 +38,8 @@ Screenshot of key pair after creating it for login to an ec2 instance, change th
 
 
 
+
+
 - Step 5
 Screenshot of successful connection to the aws ec2 instance using ssh (secure shell) with key pair.
 
@@ -127,3 +129,17 @@ Screenshot of successful stopping and deletion of the ec2 instance and the stora
 Screenshot of temination ec2 instance on aws server in us-east-1 region.
 
 ![terminated instance](img/step18-termination-successful.jpg)
+
+- step 19
+
+  The ls command lists information about files and directories. By default, it sorts entries alphabetically unless a sorting option is specified. Some useful options include:
+
+-a: Show all files, including hidden ones.
+
+-l: Use a detailed listing format.
+
+-S: Sort files by size.
+
+-t: Sort by modification time.
+
+-R: Recursively list directory contents.
