@@ -1,6 +1,43 @@
 #   Mini Project linux Text Editor (VIM and NANO)
 
+Entering Insert Mode: Press i or a to start typing. Ensure that "Hello, this is a Vim hands-on project." is entered as required.
 
+Saving and Exiting:
+
+Save and close: :wq
+
+Quit without saving: :q!
+
+Navigation Commands:
+
+Move left (h), right (l), up (k), down (j).
+
+Editing Features:
+
+Copy (yy), paste (pp), delete (dd), undo (u).
+
+Real-life use case: Vim is commonly used for editing configuration files like /etc/nginx/nginx.conf.
+
+Using Nano Editor
+Nano provides an easier interface for text editing:
+
+Opening a File:
+
+bash
+nano exercise.txt
+Editing and Saving:
+
+Type required text.
+
+Save progress: Ctrl + O, enter new name if necessary.
+
+Exit: Ctrl + X
+
+Editing an Existing File:
+
+Open an existing file using nano filename.txt, make changes, save with Ctrl + O.
+
+Real-life use case: Nano is useful for quick edits, such as updating user credentials in /etc/passwd.
 ## Readme URL Below: 
 
 https://github.com/Agbedeyisegun/3mtt-project/blob/main/darey.io/linux-project/mini-project-linux-text-editor/README.md
