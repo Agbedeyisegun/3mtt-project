@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# Environment variables
+ENVIRONMENT=$1
+
+check_num_of_args(){
+	#Checking the number of arguments
+	if [[ -z "$ENVIRONMENT" ]]; then
+		echo "Usage: $0 environment: 'local', 'testing', or 'production'."
+		exit 1
+	fi
+}
+
+
+
+activate_infra_environment() {
+	# Acting based on the argument value
+	if [[ "$ENVIRONMENT" == "local" ]]; then  
+		echo "Running script for Local Environment..."
+	elif [[ "$ENVIRONMENT" == "testing" ]]; then
+		echo "Running script for Testing Environment..."
+	elif [[ "$ENVIRONMENT" == "production" ]]; then  
+		echo "Running script for Production Environment..."
+	else  
+		echo "Invalid environment specified. Please use 'local', 'testing', or 'production'."  
+		exit 2
+	fi
+}
+
+# Function to check if AWS CLI is installed
+check_aws_cli() { 
+	if ! command -v aws &> /dev/null; then        
+		echo "AWS CLI is not installed. Please install it before proceeding."        
+		return 1 
+	fi
+}
+
+# Function to check if AWS profile is set
+AWS_CREDENTIALS_FILE="$HOME/.aws/credentials"
+check_aws_profile() {
+	if [[ -z "$AWS_PROFILE" ]]; then        
+		echo "AWS profile environment variable is not set."
+		return 1
+	fi
+	# verify if the profile exist
+	if ! grep -q "[$AWS_PROFILE]" "$AWS_CREDENTIALS_FILE"; then
+		echo "AWS profile '$AWS_PROFILE' does not exist in ~/.aws/credentials." 
+		return 1
+	fi
+
+}
+
+# Function to check if AWS environment is set
+check_aws_environment() {
+	if [[ ! -f  "$AWS_CREDENTIALS_FILE" ]]; then
+		echo "AWS credentials is not found in: ~/.aws/credentials file"
+		echo "run 'aws configure' to set up your credential is aws"
+	fi
+
+	# check if the request environment exists in aws credentials file
+	if grep -q "[$ENVIRONMENT]" "$AWS_CREDENTIALS_FILE"; then
+		echo "$ENVIRONMENT environment is correctly set in AWS credentials"
+	else
+		echo "The environment '$ENVIRONMENT' is not configure in AWS credentials file"
+		return 1
+	fi
+}
+
+
+
+check_num_of_args "$@"
+activate_infra_environment
+check_aws_cli
+check_aws_profile
+check_aws_environment
+
