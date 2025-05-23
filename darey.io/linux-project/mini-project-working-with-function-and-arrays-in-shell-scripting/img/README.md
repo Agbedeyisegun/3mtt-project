@@ -26,7 +26,7 @@ Screenshot of script checking the permission of the file, change so user can exe
 
 
 - Step 3 
-Screenshot of script called  "function.sh" this script is using functions instead of just using the code without putting them in functions. the different with it and the without fuction is just function is introduced here and you call the fuction at the end of the script so the script can run. then it make sure arguement provided after the script if not provided it request for it to be provided, also define environment of local, testing and production. exit code is set to 2 if invalid environemnt is set. This is used "check_num_of_args '$@'", and "activate_info_environment" to call the functions  and uses this cmd to run `vim function.sh/`.
+Screenshot of script called  "function.sh" this script is using functions instead of just using the code without putting them in functions. the different with it and the without fuction is just function is introduced here and you call the fuction at the end of the script so the script can run. then it make sure arguement provided after the script if not provided it request for it to be provided, also define environment of local, testing and production. exit code is set to 2 if invalid environemnt is set. This is used "check_num_of_args '$@'", and "activate_info_environment" to call the functions  and uses this cmd to run `vim function.sh/`. The script also is added to the directory.
 
 ![Function script](img/step3-with-function-script.jpg)
 
@@ -41,7 +41,7 @@ Screenshot of script checking the permission of the file, change so user can exe
 
 
 - Step 5 
-Screenshot of script checking if awscli installed, if installed it will also check if credentials is set on the system using function. called the function in the script with the following "check_aws_cli", "check_aws_credentials" respectively. The script name is "awscli_install.sh" 
+Screenshot of script checking if awscli installed, if installed it will also check if credentials is set on the system using function. called the function in the script with the following "check_aws_cli", "check_aws_credentials" respectively. The script name is "awscli_install.sh". The script also is added to the directory. 
 
 ![awscli_install.sh script overview](img/step5-check-aws-config-credentials-access-vim.jpg)
 
@@ -57,7 +57,7 @@ Screenshot of script checking the permission of the file, change so user can exe
 
 
 - Step 7
-Screenshot of script checking argument, environment, aws_cli and check credentials file for aws 1st part of the script using function for all the code block for better organisations. The script is called "aws_environment" show that script can run without ".sh" just need to provide the shebang in the first line of the script.
+Screenshot of script checking argument, environment, aws_cli and check credentials file for aws 1st part of the script using function for all the code block for better organisations. The script is called "aws_environment" show that script can run without ".sh" just need to provide the shebang in the first line of the script. 
 
 ![first part of aws_environment script overview](img/step7-aws-check-credentials-script-1.jpg)
 
@@ -65,7 +65,7 @@ Screenshot of script checking argument, environment, aws_cli and check credentia
 
 
 - Step 9
-Screenshot of aws script checking the permission of the file, change so user can execute it, test the script without any arguement so it can trigger the code block that ensure arguement is provided, this script checked if the awscli is install, check the credentials, environments and arguement provision. i have to export the environment before it was able check for testing, production and local with the following cmd respectively `export AWS_PROFILE=testing`, `ll aws_environment_check`, `chmod u+x aws_environment_check`, `./aws_environment_check`, `./aws_environment_check testing`, `./aws_environment_check production` and `./aws_environment_check local`.
+Screenshot of aws script checking the permission of the file, change so user can execute it, test the script without any arguement so it can trigger the code block that ensure arguement is provided, this script checked if the awscli is install, check the credentials, environments and arguement provision. i have to export the environment before it was able check for testing, production and local with the following cmd respectively `export AWS_PROFILE=testing`, `ll aws_environment_check`, `chmod u+x aws_environment_check`, `./aws_environment_check`, `./aws_environment_check testing`, `./aws_environment_check production` and `./aws_environment_check local`. The script also is added to the directory.
 
 ![command overview](img/step9-aws-chmod-export-bash.jpg)
 
